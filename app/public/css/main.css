@@ -1,0 +1,20 @@
+.media-left{
+  max-height: 175px;
+}
+.media-object{
+  width: 171px;
+  height: 161px;
+}
+.edit1, .delete1{
+  margin-left: 27px;
+  margin-top: 5px;
+}
+.edit1{
+  background-color: Chartreuse;
+}
+.delete1{
+  background-color: red;
+}
+.has-error{
+  color: red;
+}
