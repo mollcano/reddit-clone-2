@@ -14,6 +14,7 @@
     vm.$onInit = function () {
       $http.get('/api/posts/').then((res) => {
         vm.posts = res.data
+        return res.data
       })
     }
     vm.addPost = function () {
