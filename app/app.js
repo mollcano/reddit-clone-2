@@ -17,7 +17,8 @@ app.use('/api/posts', require('./routes/posts'))
 app.use('/api/posts', require('./routes/comments'))
 
 app.get('*', function(req, res, next) {
-  res.sendFile('index.html', {root: path.join(__dirname, './public')})
+  // res.sendFile('index.html', {root: path.join(__dirname, './public')})
+  res.sendFile(path.join(__dirname + '/public/index.html'));
 })
 
 app.use(function(req, res, next) {
