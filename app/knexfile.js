@@ -1,3 +1,5 @@
+requier('dotenv').config()
+
 module.exports = {
 
   development: {
