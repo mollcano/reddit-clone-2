@@ -12,13 +12,13 @@
     const vm = this
 
     vm.$onInit = function () {
-      $http.get('/api/posts').then((res) => {
+      $http.get('/api/posts/').then((res) => {
         vm.posts = res.data
       })
     }
     vm.addPost = function () {
       console.log(vm.post)
-      $http.post('/api/posts', vm.post).then((res) => {
+      $http.post('/api/posts/', vm.post).then((res) => {
       vm.posts.push(res.data)
       })
       delete vm.post
